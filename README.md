@@ -1,5 +1,5 @@
-# Dealer Review Application
+# xrwvm-fullstack_developer_capstone
 
-## Project Name: Dealer Review
+## fullstack_developer_capstone
 
-This project is a Django + React application that allows users to view car dealers, read and post reviews, and analyze sentiment of reviews.
+This project is a full-stack application development capstone project for the IBM Full Stack Software Developer Professional Certificate.
