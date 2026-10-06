@@ -25,7 +25,7 @@ const Register = () => {
         });
 
         const data = await response.json();
-        if (data.status === 'Registration successful') {
+        if (data.status === 'Authenticated') {
             setMessage('Registration successful! You can now log in.');
         } else {
             setMessage('Registration failed. Please try again.');
@@ -42,6 +42,7 @@ const Register = () => {
                         type="text"
                         id="userName"
                         name="userName"
+                        placeholder="Username"
                         value={userName}
                         onChange={(e) => setUserName(e.target.value)}
                         required
@@ -54,6 +55,7 @@ const Register = () => {
                         type="text"
                         id="firstName"
                         name="firstName"
+                        placeholder="First Name"
                         value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
                         required
@@ -66,6 +68,7 @@ const Register = () => {
                         type="text"
                         id="lastName"
                         name="lastName"
+                        placeholder="Last Name"
                         value={lastName}
                         onChange={(e) => setLastName(e.target.value)}
                         required
@@ -78,6 +81,7 @@ const Register = () => {
                         type="email"
                         id="email"
                         name="email"
+                        placeholder="Email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         required
@@ -90,6 +94,7 @@ const Register = () => {
                         type="password"
                         id="password"
                         name="password"
+                        placeholder="Password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                         required
